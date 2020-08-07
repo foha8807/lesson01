@@ -14,6 +14,6 @@ console.log(addExpenses.length);
 console.log('Период равен ' + period + ' месяцев');
 console.log('Цель заработать ' + mission + ' долларов');
 console.log(addExpenses.toLowerCase());
-console.log(addExpenses.split(' '));
+console.log(addExpenses.split(', '));
 console.log(addExpenses[3]);
 console.log(budgetDay);
