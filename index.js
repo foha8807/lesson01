@@ -20,4 +20,4 @@ alert("I have "+money+" $. My todays income is"+income+" $.");
 //console.log message
 
 console.log((money + income) - addExpenses);
-
+console.log(period);
