@@ -8,16 +8,16 @@
 alert("Welcome to Homework 01");
 // we can use var, let const to create variables.
 // creating variables
-const money = 5;
-const income = 10;
-var addExpenses = 9;
-const deposit = 20;
-var mission = 7;
-let period = 3;
+let money;
+let income;
+var addExpenses;
+let deposit;
+var mission;
+let period;
 
-alert("I have "+money+" $. My todays income is"+income+" $.");
-
-//console.log message
-
-console.log((money + income) - addExpenses);
-console.log(period);
+console.log(typeof(money));
+console.log(typeof(income));
+console.log(typeof(addExpenses));
+console.log(typeof(deposit));
+console.log(typeof(mission));
+console.log(typeof(period));
