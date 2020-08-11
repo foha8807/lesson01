@@ -5,7 +5,7 @@
     this is multiple line comment
 */
 
-alert("Welcome to Homework 01");
+// alert("Welcome to Homework 01");
 // we can use var, let const to create variables.
 // creating variables
 let money;
