@@ -25,7 +25,7 @@ console.log(addExpenses.toLowerCase().split(","));
 
 let expAmnt = amnt1 + amnt2;
 console.log(expAmnt);
-let budgetMonth = (money - (expAmnt));
+// let budgetMonth = (money - (expAmnt));
 console.log("Monthly Income: " + budgetMonth);
 let periodMission = Math.ceil(mission / budgetMonth);
 let budgetDay = budgetMonth / 30;
@@ -40,3 +40,19 @@ if (budgetDay < 300) {
 }else{
     console.log("У вас высокий уровень дохода");
 }
+
+const getExpensesMonth = function() {
+    console.log("Функция возвращает сумму всех обязательных расходов за месяц", amnt1 + amnt2);
+};
+const getAccumulatedMonth = function() {
+    let accumulatedMonth = (money - (amnt1 + amnt2));
+    console.log("Функция возвращает Накопления за месяц", accumulatedMonth);
+    
+    const getTargetMonth = function() {
+    console.log("за какой период будет достигнута цель ", mission / accumulatedMonth + " месяц");
+    }
+    getTargetMonth();
+};
+
+getExpensesMonth();
+getAccumulatedMonth();
