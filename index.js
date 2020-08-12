@@ -35,7 +35,7 @@ console.log("Goal will be achieved in: " + periodMission);
 
 if (budgetDay < 300) {
     console.log("К сожалению у вас уровень дохода ниже среднего");
-} else if(budgetDay <=800) {
+} else if(budgetDay <= 800) {
     console.log("У вас средний уровень дохода");
 }else{
     console.log("У вас высокий уровень дохода");
