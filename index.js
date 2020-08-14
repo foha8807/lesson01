@@ -16,8 +16,6 @@ let amnt1 = +prompt("Во сколько это обойдется?", 3200);
 let exp2 = prompt("Введите обязательную статью расходов?", "College Expenses");
 let amnt2 = +prompt("Во сколько это обойдется?", 4700);
 
-console.log("Period " + period + " of month");
-console.log(`Goal to earn ${mission} USDOllars`);
 console.log(addExpenses.toLowerCase().split(","));
 
 // 5) Удалить из кода переменную budgetMonth
