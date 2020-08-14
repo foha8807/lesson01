@@ -54,7 +54,7 @@ console.log("за какой период будет достигнута цел
 
 // 6) budgetDay высчитываем исходя из значения месячного накопления (accumulatedMonth)
 let getStatusIncome = accumulatedMonth / 30;
-console.log("etot den: " + Math.ceil(getStatusIncome));
+console.log("высчитываем исходя из значения месячного накопления: " + Math.ceil(getStatusIncome));
 
 if (getStatusIncome < 300) {
     console.log("К сожалению у вас уровень дохода ниже среднего");
