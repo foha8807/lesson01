@@ -20,31 +20,41 @@ console.log("Period " + period + " of month");
 console.log(`Goal to earn ${mission} USDOllars`);
 console.log(addExpenses.toLowerCase().split(","));
 
-// let expAmnt = amnt1 + amnt2;
-// console.log(expAmnt);
-// let budgetMonth = (money - (expAmnt));
-// console.log("Monthly Income: " + budgetMonth);
-// let periodMission = Math.ceil(mission / budgetMonth);
-// let getStatusIncome = budgetMonth / 30;
+// 5) Удалить из кода переменную budgetMonth
 
-// console.log("Daily Budget: " + Math.floor(getStatusIncome));
-// console.log("Goal will be achieved in: " + periodMission);
+/* let expAmnt = amnt1 + amnt2;
+console.log(expAmnt);
+let budgetMonth = (money - (expAmnt));
+console.log("Monthly Income: " + budgetMonth);
+let periodMission = Math.ceil(mission / budgetMonth);
+let getStatusIncome = budgetMonth / 30;
 
+console.log("Daily Budget: " + Math.floor(getStatusIncome));
+ console.log("Goal will be achieved in: " + periodMission);
+*/
+
+// 1) Объявить функцию getExpensesMonth.
 const getExpensesMonth = function() {
     return amnt1 + amnt2;
 };
 console.log("Функция возвращает сумму всех обязательных расходов за месяц: " + getExpensesMonth());
+
+// 2) Объявить функцию getAccumulatedMonth.
 const getAccumulatedMonth = function() {
   return money - getExpensesMonth();
 };
-console.log("Get accumulated Month: " + getAccumulatedMonth());
+console.log("Накопления за месяц: " + getAccumulatedMonth());
 
+// 3) Объявить переменную accumulatedMonth
 let accumulatedMonth = getAccumulatedMonth();
+
+// 4) Объявить функцию getTargetMonth.
 const getTargetMonth = function() {
     return mission / accumulatedMonth
 };
-console.log("TARGET Month: " + getTargetMonth());
+console.log("за какой период будет достигнута цель: " + getTargetMonth());
 
+// 6) budgetDay высчитываем исходя из значения месячного накопления (accumulatedMonth)
 let getStatusIncome = accumulatedMonth / 30;
 console.log("etot den: " + Math.ceil(getStatusIncome));
 
@@ -56,7 +66,7 @@ if (getStatusIncome < 300) {
     console.log("У вас высокий уровень дохода");
 }
 
-
+// 7)- вызовы функции showTypeOf
 const showTypeof = function(item){
     console.log(typeof item);
 };
