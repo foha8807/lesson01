@@ -7,13 +7,6 @@ let deposit = confirm("Есть ли у вас депозит в банке?");
 let mission = 40000;
 let period = 4;
 
-const showTypeof = function(item){
-    console.log(typeof item);
-};
-
-showTypeof(money);
-showTypeof(income);
-showTypeof(deposit);
 // console.log(income.length);
 // console.log(typeof(mission));
 // console.log(typeof addExpenses);
@@ -27,25 +20,15 @@ console.log("Period " + period + " of month");
 console.log(`Goal to earn ${mission} USDOllars`);
 console.log(addExpenses.toLowerCase().split(","));
 
-let expAmnt = amnt1 + amnt2;
-console.log(expAmnt);
-let budgetMonth = (money - (expAmnt));
-console.log("Monthly Income: " + budgetMonth);
-let periodMission = Math.ceil(mission / budgetMonth);
-let getStatusIncome = budgetMonth / 30;
+// let expAmnt = amnt1 + amnt2;
+// console.log(expAmnt);
+// let budgetMonth = (money - (expAmnt));
+// console.log("Monthly Income: " + budgetMonth);
+// let periodMission = Math.ceil(mission / budgetMonth);
+// let getStatusIncome = budgetMonth / 30;
 
-console.log("Daily Budget: " + Math.floor(getStatusIncome));
-console.log("Goal will be achieved in: " + periodMission);
-
-if (getStatusIncome < 300) {
-    console.log("К сожалению у вас уровень дохода ниже среднего");
-} else if(getStatusIncome <= 800) {
-    console.log("У вас средний уровень дохода");
-}else{
-    console.log("У вас высокий уровень дохода");
-}
-
-
+// console.log("Daily Budget: " + Math.floor(getStatusIncome));
+// console.log("Goal will be achieved in: " + periodMission);
 
 const getExpensesMonth = function() {
     return amnt1 + amnt2;
@@ -61,5 +44,22 @@ const getTargetMonth = function() {
     return mission / accumulatedMonth
 };
 console.log("TARGET Month: " + getTargetMonth());
-let budgetDay2 = accumulatedMonth / 30;
-console.log("etot den: " + Math.ceil(budgetDay2));
+
+let getStatusIncome = accumulatedMonth / 30;
+console.log("etot den: " + Math.ceil(getStatusIncome));
+
+if (getStatusIncome < 300) {
+    console.log("К сожалению у вас уровень дохода ниже среднего");
+} else if(getStatusIncome <= 800) {
+    console.log("У вас средний уровень дохода");
+}else{
+    console.log("У вас высокий уровень дохода");
+}
+
+
+const showTypeof = function(item){
+    console.log(typeof item);
+};
+showTypeof(money);
+showTypeof(income);
+showTypeof(deposit);
